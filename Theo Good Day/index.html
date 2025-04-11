@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Theo Good Day</title>
+
+  <!-- 폰트: SUIT + Noto Sans KR -->
+  <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #ffffff;
+      font-family: 'SUIT', 'Noto Sans KR', sans-serif;
+      color: #111;
+      padding: 80px 24px;
+      max-width: 900px;
+      margin: auto;
+      line-height: 1.8;
+      text-align: center;
+    }
+
+    /* 제목 */
+    header h1 {
+      font-size: 44px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    /* 메뉴 */
+    nav.top-menu {
+      margin-bottom: 60px;
+    }
+
+    nav.top-menu ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 28px;
+      padding: 0;
+    }
+
+    nav.top-menu li a {
+      text-decoration: none;
+      color: #333;
+      font-size: 15px;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav.top-menu li a:hover {
+      color: #888;
+    }
+
+    /* 포스트 예시 */
+    .post {
+      margin-bottom: 80px;
+    }
+
+    .post-title {
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .post-summary {
+      font-size: 16px;
+      color: #555;
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 32px;
+      }
+
+      nav.top-menu ul {
+        flex-direction: column;
+        gap: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Theo Good Day</h1>
+
+    <nav class="top-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="post">
+    <div class="post-title">환영합니다</div>
+    <div class="post-summary">
+      Theo Good Day에 오신 걸 환영해요!<br />    
+    </div>
+  </div>
+
+</body>
+</html>
